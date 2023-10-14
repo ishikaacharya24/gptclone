@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        .header_container {
+            background-color: #ff0000;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .left_top_header {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .center_top_header {
+            color: #ffffff;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .right_top_header {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Main Content Styles */
+        .main_content {
+            padding-top: 80px; /* Adjust according to header height */
+            display: flex;
+        }
+
+        .left_section_container {
+            width: 25%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+        }
+
+        .middle_section_container {
+            width: 38%;
+            margin-left: 25%;
+            background-color: #e1e1e1;
+            height: 100vh;
+        }
+
+        .right_section_container {
+            width: 72%;
+            position: fixed;
+            right: 0;
+            background-color: #d1d1d1;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header_container">
+        <div class="left_top_header">Left Header</div>
+        <div class="center_top_header">Center Header</div>
+        <div class="right_top_header">Right Header</div>
+    </div>
+
+    <div class="main_content">
+        <div class="left_section_container">Left Section</div>
+        <div class="middle_section_container">Middle Section</div>
+        <div class="right_section_container">Right Section</div>
+    </div>
+</body>
+</html>

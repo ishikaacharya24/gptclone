@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+#app-container {
+    display: flex;
+    height: 100vh;
+}
+
+#left-pane {
+    width: 20%;
+    background-color: #121212;
+    padding: 20px;
+    border-right: 1px solid #333;
+}
+
+#right-pane {
+    width: 75%;
+    background-color: #222;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+ }
+   
+ /* this is the header in the right pane at the top section*/
+#header {
+    /*CHATGPT: same */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*chatgpt: padding-bottom 24px
+               padding-left 8px
+               padding-right 8px
+               padding-top 24px*/
+    padding: 10px;
+    /*CHATGPT:NOT AVAILABLE*/
+    background-color: #333;
+}
+
+#new-chart-btn {
+    width: 70%;
+    padding: 10px;
+    background-color: #464647;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#hide-left-pane-btn {
+    width: 20%;
+    padding: 10px;
+    background-color: #414344;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#existing-chats {
+    margin-top: 20px;
+    overflow-y: auto;
+}
+/* this is the chat item  in the left pane at the top section*/
+.chat-item {
+  /*  padding-bottom 4px
+      padding-left 12px
+      padding-right 12px
+      padding-top 4px*/
+    padding: 10px;
+    /*CHATGPT: SAME */
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.chat-item:last-child {
+    border-bottom: none;
+}
+
+#floating-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.floating-button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #464748;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+#message-container {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+/*this is the input box container in the right pane*/
+#input-box-container {
+    /*CHATGPT: same */
+    display: flex;
+    /*CHATGPT: NOT AVAILABLE*/
+    align-items: center;
+    /*CHATGPT: padding-bottom 16px
+       padding-left 16px
+       padding-right 48px
+       padding-top 16px*/
+    padding: 10px;
+    /*chatgpt: rgba(0, 0, 0, 0)*/
+    background-color: #333;
+}
+/*this is the input box container in the right pane*/
+#input-box {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+/**/
+#send-button {
+    padding: 10px 20pX;
+     margin-left: 10px;
+    background-color: #3f4042;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
